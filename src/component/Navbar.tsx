@@ -9,10 +9,12 @@ export default function Navbar() {
     const toggle = () => setIsOpen(!isOpen)
     return (
         <div className="mb-3">
-            <div className='d-none d-sm-block bg-light p-3'>
-                <div className="row">
+            <div className='d-none d-sm-block  px-3'>
+                <div className="row align-items-center">
                     <div className="col-2">
-                       <span className="rounded p-3 border border-dark border-1">B</span>
+                        <span className="rounded border border-dark border-1">
+                            <img src="Kalpvruksh_logo.jpg" style={{height: '85px!important;'}} className="img-fluid h-auto w-auto" />
+                        </span>
                     </div>
                     <div className="col-sm-7 col-md-8">
                         <div className="d-flex justify-content-evenly">
@@ -32,8 +34,8 @@ export default function Navbar() {
                         <Link href={'/'} className="list-group-item">Home</Link>
                         <Link href={'/products'} className="list-group-item">
                             Products
-                       </Link>
-                        <Link href={'/about'}  className="list-group-item">
+                        </Link>
+                        <Link href={'/about'} className="list-group-item">
                             About Us
                         </Link>
                         {/* <Link href={'/cont'} className="list-group-item">
