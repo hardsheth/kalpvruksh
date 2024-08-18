@@ -4,6 +4,7 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
+import SiteFooter from "@/component/SiteFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <SiteFooter />
         </body>
     </html>
   );

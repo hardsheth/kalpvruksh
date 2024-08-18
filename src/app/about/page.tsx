@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 export default function page() {
   return (
@@ -24,11 +24,11 @@ export default function page() {
             Product For You
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum labore maxime rem nobis veniam beatae! Molestias obcaecati ab, nemo dolor provident delectus iste doloribus adipisci enim beatae? Molestiae totam dolore doloribus fugit, sit alias maiores, fugiat aspernatur odio, illum sequi quod dolorum corporis animi at incidunt nobis perferendis. Consequuntur ipsam itaque, nemo non ea vitae dolorum quae atque voluptate consectetur, dolor vero assumenda suscipit eaque facilis, doloribus sit. Minima, corrupti.
+           There are so many products in all segment for according to customer taste. Some of the famous products are the Garam Masala, Bhaji Pav Masala etc.
           </p>
         </div>
         <div className="col">
-          <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="some Random Image" className={Styles.img_app} />
+        <img src="/IMG-20240818-WA0011.jpg" alt="some Random Image" className={Styles.img_app} />
         </div>
       </div>
       <div className={`mt-2 h-100 ${Styles.back_img_continer}`}>
@@ -41,12 +41,15 @@ export default function page() {
               },
             }
           }
-
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           slidesPerView={1}
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
           {/* <SwiperSlide>Slide 1</SwiperSlide>
@@ -54,39 +57,38 @@ export default function page() {
               <SwiperSlide>Slide 3</SwiperSlide> */}
           <SwiperSlide >
             <div className='px-2 text-center h-100'>
-              <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="some Random Image" className={Styles.profile_img} />
+              <img src="/IMG-20240818-WA0001.jpg" alt="some Random Image" className={Styles.profile_img} />
               <div className='col-12'>
                 <div className='ps-1'>
-                  <p className='fs-5 text-wrap'> Lorem, ipsum.</p>
+                  <p className='fs-5 text-wrap'> Dabeli Masala.</p>
                 </div>
                 <div className='ps-1'>
-                  <p className='w-100 text-wrap'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo omnis voluptatum neque aliquam. Magnam, provident!... </p><span className={Styles.extraText} >Read more</span>
+                  <p className='w-100 text-wrap'>Famous masala for to make/cook dabeli at home which also taste good & great for health. </p><span className={Styles.extraText} >Read more</span>
                 </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide >
             <div className='px-2 text-center h-100'>
-              <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="some Random Image" className={Styles.profile_img} />
+              <img src="/IMG-20240818-WA0002.jpg" alt="some Random Image" className={Styles.profile_img} />
               <div className='col-12'>
                 <div className='ps-1'>
-                  <p className='fs-5 text-wrap'> Lorem, ipsum.</p>
+                  <p className='fs-5 text-wrap'> Kashmiri Mirch</p>
                 </div>
                 <div className='ps-1'>
-                  <p className='w-100 text-wrap'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo omnis voluptatum neque aliquam. Magnam, provident!... </p><span className={Styles.extraText} >Read more</span>
-                </div>
+                <p className='w-100 text-wrap'>Famous masala for to make/cook dabeli at home which also taste good & great for health. </p><span className={Styles.extraText} >Read more</span>  </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide >
             <div className='px-2 text-center h-100'>
-              <img src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" alt="some Random Image" className={Styles.profile_img} />
+              <img src="/IMG-20240818-WA0003.jpg" alt="some Random Image" className={Styles.profile_img} />
               <div className='col-12'>
                 <div className='ps-1'>
-                  <p className='fs-5 text-wrap'> Lorem, ipsum.</p>
+                  <p className='fs-5 text-wrap'> Sambhar Masala</p>
                 </div>
                 <div className='ps-1'>
-                  <p className='w-100 text-wrap'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo omnis voluptatum neque aliquam. Magnam, provident!... </p><span className={Styles.extraText} >Read more</span>
+                <p className='w-100 text-wrap'>Famous masala for to make/cook dabeli at home which also taste good & great for health. </p><span className={Styles.extraText} >Read more</span>
                 </div>
               </div>
             </div>
