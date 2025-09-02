@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 import { AccordionBody, AccordionHeader, AccordionItem, UncontrolledAccordion } from 'reactstrap'
 import 'react-tabs/style/react-tabs.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -11,7 +12,7 @@ function page() {
                 <div className="row row-cols-1 row-cols-md-2">
                     <div className="col">
                         <div className="row ms">
-                            <img src="/asset/WhatsApp Image 2024-06-04 at 11.37.31_635af66c.jpg" alt="Profile 3" />
+                            <Image src="/asset/WhatsApp Image 2024-06-04 at 11.37.31_635af66c.jpg" alt="Profile 3" width={400} height={300} />
                         </div>
                     </div>
                     <div className="col">
@@ -19,16 +20,16 @@ function page() {
                         <UncontrolledAccordion
                             defaultOpen={[
                                 '1',
-                                '2'
                             ]}
                             stayOpen
+                            toggle={() => {}}
                         >
                             <AccordionItem className='border-start-0 border-end-0 '>
                                 <AccordionHeader targetId="1" >
                                     DESCRIPTION
                                 </AccordionHeader>
                                 <AccordionBody accordionId="1">
-                                    We are proud to present our unique products. You`ll be amazed because we have a largest choice of tremendous spices. We provide only premium quality goods at a fair price. Our vendors and manufacturers guarantee the quality of our spices. There is no doubt about our reputation because it`s perfect and our clients` testimonials can prove this fact.
+                                    We are proud to present our unique products. You&apos;ll be amazed because we have a largest choice of tremendous spices. We provide only premium quality goods at a fair price. Our vendors and manufacturers guarantee the quality of our spices. There is no doubt about our reputation because it&apos;s perfect and our clients&apos; testimonials can prove this fact.
                                     {/* <code>
                                         .accordion-body
                                     </code> */}
@@ -41,9 +42,9 @@ function page() {
                                 </AccordionHeader>
                                 <AccordionBody accordionId="2">
                                     <strong>
-                                        This is the second item's accordion body.
+                                        This is the second item&apos;s accordion body.
                                     </strong>
-                                    You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the{' '}
+                                    You can modify any of this with custom CSS or overriding our default variables. It&apos;s also worth noting that just about any HTML can go within the{' '}
 
                                     , though the transition does limit overflow.
                                 </AccordionBody>
@@ -67,14 +68,14 @@ function page() {
                                             Tags: Dolor
                                         </li>
                                         <li className='list-group-item border-0 fw-bold'>
-                                            Collections: Organic Spice Set, Spices & herbs
+                                            Collections: Organic Spice Set, Spices &amp; herbs
                                         </li>
                                     </ul>
                                 </AccordionBody>
                             </AccordionItem>
                         </UncontrolledAccordion>
                         <p>
-                            We are proud to present our unique products. You`ll be amazed because we have a largest choice of tremendous spices. We provide only premium quality goods at a fair price. Our vendors and manufacturers guarantee the quality of our spices. There is no doubt about our reputation because it`s perfect and our clients` testimonials can prove this fact.
+                            We are proud to present our unique products. You&apos;ll be amazed because we have a largest choice of tremendous spices. We provide only premium quality goods at a fair price. Our vendors and manufacturers guarantee the quality of our spices. There is no doubt about our reputation because it&apos;s perfect and our clients&apos; testimonials can prove this fact.
                         </p>
                     </div>
                 </div>
@@ -88,7 +89,7 @@ function page() {
                             </TabList>
 
                             <TabPanel>
-                                <p>We are proud to present our unique products. You`ll be amazed because we have a largest choice of tremendous spices. We provide only premium quality goods at a fair price. Our vendors and manufacturers guarantee the quality of our spices. There is no doubt about our reputation because it`s perfect and our clients` testimonials can prove this fact.</p>
+                                <p>We are proud to present our unique products. You&apos;ll be amazed because we have a largest choice of tremendous spices. We provide only premium quality goods at a fair price. Our vendors and manufacturers guarantee the quality of our spices. There is no doubt about our reputation because it&apos;s perfect and our clients&apos; testimonials can prove this fact.</p>
                             </TabPanel>
                             <TabPanel>
                                 <h3>
