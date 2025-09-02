@@ -2,94 +2,23 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+   <div className="container-fluid">
+    <div className="row">
+    <img src="/asset/WhatsApp Image 2024-06-04 at 11.37.28_a95ac451.jpg" alt="Banner Image" className={styles.bannerimg} />
+    </div>
+    <div className="row row-cols-3 mt-2">
+      <div className="col relative-position">
+      <img src="/asset/WhatsApp Image 2024-06-04 at 11.37.29_13786939.jpg" alt="Side Image 1" className={`${styles.sideimg} animated-right`} />
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="col">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos cupiditate exercitationem magni repudiandae minima laborum tempore natus culpa maiores voluptates aut maxime veritatis, deleniti veniam debitis iure dolor dolores cumque, provident distinctio. Molestias commodi harum placeat tempore magni illo quos ab, dolor odio quibusdam expedita cumque officiis dolorum ea deleniti temporibus optio amet dolores incidunt id, possimus saepe! Id cupiditate quaerat quidem nihil dolorum quos veritatis similique incidunt illo, odio iure! Deserunt temporibus pariatur voluptate expedita reiciendis quae, impedit fugit cumque eum, veniam, dolores accusamus suscipit deleniti cupiditate saepe! Recusandae quo culpa, quae voluptates placeat deserunt porro alias mollitia molestias.</p>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="col relative-position">
+      <img src="/asset/WhatsApp Image 2024-06-04 at 11.37.29_ec055126.jpg" alt="Side Image 2" className={`${styles.sideimg} animated-left`} />
       </div>
-    </main>
+    </div>
+   </div>
   );
 }
