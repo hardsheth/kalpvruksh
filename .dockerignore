@@ -1,0 +1,9 @@
+uploads
+dist
+node_modules
+.wwebjs_cache
+logs
+wwebjs_auth
+data
+test
+.next
